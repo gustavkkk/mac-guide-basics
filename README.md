@@ -33,3 +33,17 @@ macos
           -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules ..
           
 2. install dlib
+
+3. Usage of conda[https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos]
+        - Usage of virtual environment    
+        $conda list | grep python
+        $conda create -yn opencvtest python=3.5.2
+        $source activate opencvtest
+        $conda list | grep python
+        $conda search -c conda-forge --spec 'opencv=3*'
+        $conda install -y -c conda-forge opencv
+        $conda list | grep -e python -e opencv
+        
+        - Direct Install
+        $conda install python=3.5
+        $conda install -c menpo opencv3
