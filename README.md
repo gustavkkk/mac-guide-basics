@@ -50,6 +50,5 @@ macos
         $conda list | grep -e python -e opencv
         
         ### Upgrade and Downgrade of anaconda, Direct Installation of OpenCV
-        
-          $conda install python=3.5
-          $conda install -c menpo opencv3
+        $conda install python=3.5
+        $conda install -c menpo opencv3
