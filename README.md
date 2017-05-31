@@ -3,7 +3,9 @@ macos
 # check system info
   sysctl -a machdep.cpu
 # python
-1. install opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
+1. Install anaconda([https://www.continuum.io/downloads])
+
+2. install opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
 
         -python 3.5.2
         $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
@@ -32,9 +34,11 @@ macos
           -D BUILD_EXAMPLES=ON \
           -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules ..
           
-2. install dlib
+3. install dlib
 
-3. Usage of conda[https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos]
+        $sudo pip install dlib
+        
+4. Usage of conda[https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos]
 
         - Usage of virtual environment    
         $conda list | grep python
