@@ -35,6 +35,7 @@ macos
 2. install dlib
 
 3. Usage of conda[https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos]
+
         - Usage of virtual environment    
         $conda list | grep python
         $conda create -yn opencvtest python=3.5.2
@@ -44,6 +45,6 @@ macos
         $conda install -y -c conda-forge opencv
         $conda list | grep -e python -e opencv
         
-        - Direct Install
+        - Direct Install
         $conda install python=3.5
         $conda install -c menpo opencv3
