@@ -40,7 +40,7 @@ macos
         
 4. Usage of conda[https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos]
 
-        - Usage of virtual environment    
+        ###Usage of virtual environment    
         $conda list | grep python
         $conda create -yn opencvtest python=3.5.2
         $source activate opencvtest
@@ -49,6 +49,6 @@ macos
         $conda install -y -c conda-forge opencv
         $conda list | grep -e python -e opencv
         
-        - Upgrade and Downgrade of anaconda, Direct Installation of OpenCV
+        ###Upgrade and Downgrade of anaconda, Direct Installation of OpenCV
         $conda install python=3.5
         $conda install -c menpo opencv3
