@@ -48,7 +48,6 @@ macos
         $conda search -c conda-forge --spec 'opencv=3*'
         $conda install -y -c conda-forge opencv
         $conda list | grep -e python -e opencv
-        
-        ### Upgrade and Downgrade of anaconda, Direct Installation of OpenCV
+        ### Upgrade and Downgrade of anaconda, Direct Installation of OpenCV
         $conda install python=3.5
         $conda install -c menpo opencv3
