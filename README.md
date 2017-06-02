@@ -5,6 +5,11 @@ macos
 # python
 1. Install anaconda([https://www.continuum.io/downloads])
 
+        #all versions
+        https://docs.continuum.io/anaconda/#previous-versions
+        https://docs.continuum.io/anaconda/oldpkglists
+        https://repo.continuum.io/archive/
+
 2. install opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
 
         -python 3.5.2
