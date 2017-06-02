@@ -3,24 +3,33 @@ macos
 # check system info
   sysctl -a machdep.cpu
 # python
-1. Install anaconda([https://www.continuum.io/downloads])
+1. Install anaconda + opencv([https://www.continuum.io/downloads])
 
-        #all versions
+        # all versions
         https://docs.continuum.io/anaconda/#previous-versions
         https://docs.continuum.io/anaconda/oldpkglists
         https://repo.continuum.io/archive/
-        #guide
+        # guide
         you make sure the installation location is /root
         while installing, it will need you to type admin pw
-        #check
+        # check
         $which python3
         /anaconda/bin/python3
         $cat ~/.bash_profile
-        # added by Anaconda3 4.3.1 installer
-        export PATH="/anaconda/bin:$PATH"
+        (# added by Anaconda3 4.3.1 installer
+        export PATH="/anaconda/bin:$PATH")
+        $conda list
+        (you can see the packages)
+        # install opencv
+        $conda install numpy
+        $conda install -c menpo opencv3=3.2.0
 
-2. install opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
+2. install python + opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
 
+        $brew install python3
+        $brew install numpy
+        $which python3
+        /usr/local/bin
         -python 3.5.2
         $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local \
