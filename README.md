@@ -9,6 +9,15 @@ macos
         https://docs.continuum.io/anaconda/#previous-versions
         https://docs.continuum.io/anaconda/oldpkglists
         https://repo.continuum.io/archive/
+        #guide
+        you make sure the installation location is /root
+        while installing, it will need you to type admin pw
+        #check
+        $which python3
+        /anaconda/bin/python3
+        $cat ~/.bash_profile
+        # added by Anaconda3 4.3.1 installer
+        export PATH="/anaconda/bin:$PATH"
 
 2. install opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
 
