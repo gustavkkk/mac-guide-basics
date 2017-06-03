@@ -3,9 +3,10 @@ macos
 # check system info
   sysctl -a machdep.cpu
 # python
-1. Install anaconda + opencv(https://www.continuum.io/downloads)
+1. Install anaconda + opencv(https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos)
 
         # all versions
+        https://www.continuum.io/downloads
         https://docs.continuum.io/anaconda/#previous-versions
         https://docs.continuum.io/anaconda/oldpkglists
         https://repo.continuum.io/archive/
@@ -28,8 +29,7 @@ macos
         https://github.com/conda-forge/opencv-feedstock
         $conda install numpy
         $conda config --add channels conda-forge
-        $conda install -c menpo opencv3=3.2.0
-        $
+        $conda install opencv
 
 2. install python + opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
 
@@ -68,16 +68,3 @@ macos
 
         $sudo pip install dlib
         
-4. Usage of conda[https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos]
-
-        ### Usage of virtual environment    
-        $conda list | grep python
-        $conda create -yn opencvtest python=3.5.2
-        $source activate opencvtest
-        $conda list | grep python
-        $conda search -c conda-forge --spec 'opencv=3*'
-        $conda install -y -c conda-forge opencv
-        $conda list | grep -e python -e opencv
-        ### Upgrade and Downgrade of anaconda, Direct Installation of OpenCV
-        $conda install python=3.5
-        $conda install -c menpo opencv3
