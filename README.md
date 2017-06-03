@@ -20,6 +20,8 @@ macos
         export PATH="/anaconda/bin:$PATH")
         $conda list
         (you can see the packages)
+        #downgrade python
+        $conda install python=3.5
         # install opencv
         $conda install numpy
         $conda install -c menpo opencv3=3.2.0
