@@ -1,6 +1,6 @@
 # MAC-BEGINNER-GUIDE
 
-  My Favorites(MacOS)
+  My Favorites/My Found in MacOS
   
 # COMMANDS 
 
