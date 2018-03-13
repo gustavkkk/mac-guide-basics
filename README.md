@@ -10,7 +10,9 @@
 
 # INSTALLATION
 
-### BREW INSTALL
+### [BREW INSTALL](https://coolestguidesontheplanet.com/installing-homebrew-on-macos-sierra-package-manager-for-unix-apps/)
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   
 ### Qt INSTALL
