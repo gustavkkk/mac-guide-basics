@@ -8,12 +8,18 @@
     
     sysctl -a machdep.cpu
 
+  ### brew install opencv
+  
+    brew install gcc --force-bottle
+    brew reinstall gcc --without-multilib
+    brew tap homebrew/science
+    brew install opencv --32-bit
+    
 # INSTALLATION
 
 ### [BREW INSTALL](https://coolestguidesontheplanet.com/installing-homebrew-on-macos-sierra-package-manager-for-unix-apps/)
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
   
 ### Qt INSTALL
   
