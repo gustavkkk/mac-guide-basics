@@ -17,7 +17,10 @@
   
 ### Qt INSTALL
   
+    http://download.qt.io/official_releases/qt/
+    
     http://ftp.jaist.ac.jp/pub/qtproject/online/qt5/mac/x64/online_repository/
+        
   
 ### PYTHON IDE
 
