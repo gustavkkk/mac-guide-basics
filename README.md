@@ -19,7 +19,7 @@
   
 ### PYTHON IDE
 
-1. Install anaconda + opencv(https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos)
+  [*] Install anaconda + opencv(https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos)
 
         # all versions
         https://www.continuum.io/downloads
@@ -47,7 +47,7 @@
         $conda config --add channels conda-forge
         $conda install opencv
 
-2. install python + opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
+   [*] install python + opencv(http://www.pyimagesearch.com/2016/12/05/macos-install-opencv-3-and-python-3-5/)
 
         $brew install python3
         $brew install numpy
@@ -80,7 +80,7 @@
           -D BUILD_EXAMPLES=ON \
           -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules ..
           
-3. install dlib
+   [*] install dlib
 
         $sudo pip install dlib
         
