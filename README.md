@@ -1,8 +1,21 @@
-# mac-guide-basics
-macos
-# check system info
-  sysctl -a machdep.cpu
-# python
+# MAC-BEGINNER-GUIDE
+
+  My Favorites(MacOS)
+  
+# COMMANDS 
+
+  ### check system info
+    
+    sysctl -a machdep.cpu
+  
+# BREW INSTALL
+
+  
+# Qt INSTALL
+  
+    
+  
+# PYTHON IDE
 1. Install anaconda + opencv(https://stackoverflow.com/questions/41873941/cant-install-opencv3-on-anaconda3-python3-6-on-macos)
 
         # all versions
