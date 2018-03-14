@@ -13,15 +13,16 @@
      $ cd MacOSX10.12.sdk/System/Library/Frameworks
      [$ sudo cp -rf QTKit.framework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/]
      [$ sudo cp -rf /System/Library/Frameworks]
-     $ cd QTKit.framework/Versions/A/Headers
+     $ cd cd 
      
    [Solution](https://stackoverflow.com/questions/39590741/fatal-error-qtkit-qtkit-h-file-not-found-when-i-build-opencv-on-mac)
 
      $ cd opencv-2.4.9
      $ mkdir build
-     $
-     $ cp -rf *.
-     $ cd build
+     $ cd modules/highgui/src
+     $ mkdir QTKit
+     $ cp -rf ~/MacOSX10.12.sdk/System/Library/Frameworks/QTKit.framework/Versions/A/Headers/*.* QTKit/
+     $ cd ~/opencv-2.4.9/build
      $ cmake -DWITH_QUICKTIME=OFF -DWITH_GSTREAMER=OFF -DWITH_FFMPEG=OFF -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release .. ; make -j4
      [$ cmake -G "Unix Makefiles" ..; make -j8; sudo make install]
 
