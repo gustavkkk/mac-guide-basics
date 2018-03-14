@@ -7,8 +7,11 @@
      
 ### Building
 
-     $ cd opencv
-     $ cmake -G "Unix Makefiles" ..
-     $ make -j8
-     $ sudo make install
+     $ cd opencv-2.4.9
+     $ mkdir build
+     $ cd build
+     $ cmake -DWITH_QUICKTIME=OFF -DWITH_GSTREAMER=OFF -DWITH_FFMPEG=OFF -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release .. ; make -j4
+     [$ cmake -G "Unix Makefiles" ..; make -j8; sudo make install]
+     
+   [avoid-'QTKit/QTKit.h' file not found](https://www.pyimagesearch.com/2016/11/28/macos-install-opencv-3-and-python-2-7/)
 
