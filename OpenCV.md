@@ -24,4 +24,5 @@
      $ cd ~/opencv-2.4.9/build
      $ cmake -DWITH_QUICKTIME=OFF -DWITH_GSTREAMER=OFF -DWITH_FFMPEG=OFF -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release .. ; make -j4
      [$ cmake -G "Unix Makefiles" ..; make -j8; sudo make install]
+     $ sudo make install
 
