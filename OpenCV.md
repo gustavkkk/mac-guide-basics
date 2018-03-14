@@ -7,7 +7,7 @@
      
 ### Building
 
-   [Fatal error: 'QTKit/QTKit.h' file not found](https://stackoverflow.com/questions/39735485/opencv-installation-failure-due-to-qtkit) is caused because QTKit has been deprecated in 10.9. [This Report](https://www.pyimagesearch.com/2016/11/28/macos-install-opencv-3-and-python-2-7/) explains above opencv3.2 has solution for this. You can solve this problem to copy QTKIT framework or QuickTime Framework to the corresponding dir.
+   [Fatal error: 'QTKit/QTKit.h' file not found](https://stackoverflow.com/questions/39735485/opencv-installation-failure-due-to-qtkit) is caused because QTKit has been deprecated in 10.9. [This Report](https://www.pyimagesearch.com/2016/11/28/macos-install-opencv-3-and-python-2-7/) explains above opencv3.2 has solution for this. You can solve this problem to copy QTKIT framework or QuickTime Framework to /System/Library/Frameworks.
    
      $ cd opencv-2.4.9
      $ mkdir build
