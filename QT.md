@@ -1,10 +1,7 @@
-### Download
+### Download & Install
 
-    $
+    http://download.qt.io/archive/qt/5.10/5.10.1/qt-opensource-mac-x64-5.10.1.dmg
     
-### Install
-
-    $ 
 ### Set env
 
     $ gedit ~/.bash_profile
