@@ -12,16 +12,10 @@
      $ tar -xvf MacOSX10.11.sdk.tar.xz
      $ cd MacOSX10.12.sdk/System/Library/Frameworks
      [$ sudo cp -rf QTKit.framework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/]
-     [$ sudo cp -rf /System/Library/Frameworks]
+     [$ sudo cp -rf /System/Library/Frameworks]
      $ cd QTKit.framework/Versions/A/Headers
      
-   [](https://stackoverflow.com/questions/39590741/fatal-error-qtkit-qtkit-h-file-not-found-when-i-build-opencv-on-mac)
-   Here is a workaround solution to fix the issue:
-   Download MACOSX SDK here.
-   extract head files from MacOSX10.11.sdk/MacOSX10.11.sdk/System/Library/Frameworks/QTKit.framework/Headers/
-   Create a folder under opencv source file folder: opencv-3.2.0/modules/highgui/src/QTKit, and copy all header files into the folder.
-   Follow the regular opencv build steps. When you run make -j8, you don't need set "-DWITH_QUICKTIME=OFF -DWITH_GSTREAMER=OFF -DWITH_FFMPEG=OFF"
-This works for opencv2.x and 3.x
+   [Solution](https://stackoverflow.com/questions/39590741/fatal-error-qtkit-qtkit-h-file-not-found-when-i-build-opencv-on-mac)
 
      $ cd opencv-2.4.9
      $ mkdir build
