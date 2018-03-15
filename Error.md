@@ -1,5 +1,5 @@
 ### - dyld: Symbol not found: __cg_jpeg_resync_to_restart
-###　　Referenced from: /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
+### Referenced from: /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
 ###     Expected in: /usr/local/lib/libJPEG.dylib
 ###     in /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
     
