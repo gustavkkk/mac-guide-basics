@@ -1,6 +1,10 @@
 ### 1.dyld: Symbol not found: __cg_jpeg_resync_to_restart
-
+ Referenced from: /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
+  Expected in: /usr/local/lib/libJPEG.dylib
+ in /System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
     
+    $ sudo cp -f /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJPEG.dylib /usr/local/lib/libJPEG.dylib
+    $ sudo cp -f /System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib /usr/local/lib/libTIFF.dylib
 
 ### 2.ld: symbol(s) not found for architecture x86_64 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
