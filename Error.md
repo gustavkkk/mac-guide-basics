@@ -4,7 +4,18 @@
 
 ### 2.ld: symbol(s) not found for architecture x86_64 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
-    add QT clang path to PATH
+   opencv
+   
+    $ cp /usr/local/share/OpenCV/3rdparty/lib/libippicv.a /usr/local/lib/
+    $ cd /usr/local/lib
+    $ chmod a+x libippicv.a
+    $ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/lib
+    
+   qt
+   
+    1. Install
+    2. Set Env
+    $ export PATH=$PATH:/Users/'whoami'/Qt5.10.0/5.10.0/clang_64/bin
 
 ### 3.Operation not permitted
 
