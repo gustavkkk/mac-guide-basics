@@ -22,6 +22,18 @@
     2. Set Env
     $ export PATH=$PATH:/Users/'whoami'/Qt5.10.0/5.10.0/clang_64/bin
 
-### 3.Operation not permitted
+### 3. Operation not permitted
 
     System Integrity Protection
+    
+### 4. Fatal error: 'QTKit/QTKit.h' file not found
+
+     $ tar -xvf MacOSX10.11.sdk.tar.xz
+     $ cd opencv-2.4.9
+     $ mkdir build
+     $ cd modules/highgui/src
+     $ mkdir QTKit
+     $ cp -rf ~/MacOSX10.12.sdk/System/Library/Frameworks/QTKit.framework/Versions/A/Headers/*.* QTKit/
+     $ cd ~/opencv-2.4.9/build
+     $ cmake -DWITH_QUICKTIME=OFF -DWITH_GSTREAMER=OFF -DWITH_FFMPEG=OFF -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release .. ; make -j4
+     $ sudo make install
