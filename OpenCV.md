@@ -8,7 +8,7 @@
 
      $ brew update 
      $ brew info opencv 
-     $ brew tap homebrew/science 
+     [$ brew tap homebrew/science] 
      $ brew install opencv --with-qt5 --with-ffmpeg --with-opengl --with-opencl      
 
 ### Build&Install using CMake
