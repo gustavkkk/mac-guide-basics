@@ -2,8 +2,7 @@
 
 R: 
 
-### ld: symbol(s) not found for architecture x86_64
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
+### ld: symbol(s) not found for architecture x86_64 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
 ### Operation not permitted
 
