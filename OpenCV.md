@@ -4,8 +4,14 @@
   
 ### Install [Brew](https://github.com/gustavkkk/frequently-used-cmds/blob/master/HomeBrew.md) and [CMake]()
 
-     
-### Building
+### Install using brew 
+
+     $ brew update 
+     $ brew info opencv 
+     $ brew tap homebrew/science 
+     $ brew install opencv --with-qt5 --with-ffmpeg --with-opengl --with-opencl      
+
+### Build&Install using CMake
 
    [Fatal error: 'QTKit/QTKit.h' file not found](https://stackoverflow.com/questions/39735485/opencv-installation-failure-due-to-qtkit) is caused because QTKit has been deprecated in 10.9. [This Report](https://www.pyimagesearch.com/2016/11/28/macos-install-opencv-3-and-python-2-7/) explains above opencv3.2 has solution for this. You can solve this problem to copy QTKIT framework or QuickTime Framework to /System/Library/Frameworks.
      
