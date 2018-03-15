@@ -22,11 +22,11 @@
     2. Set Env
     $ export PATH=$PATH:/Users/'whoami'/Qt5.10.0/5.10.0/clang_64/bin
 
-### - Operation not permitted
+### - [Operation not permitted](https://stackoverflow.com/questions/32659348/operation-not-permitted-when-on-root-el-capitan-rootless-disabled)
 
     System Integrity Protection
     
-### - Fatal error: 'QTKit/QTKit.h' file not found
+### - [Fatal error: 'QTKit/QTKit.h' file not found](https://stackoverflow.com/questions/39590741/fatal-error-qtkit-qtkit-h-file-not-found-when-i-build-opencv-on-mac)
 
      $ tar -xvf MacOSX10.11.sdk.tar.xz
      $ cd opencv-2.4.9
