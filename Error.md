@@ -25,6 +25,9 @@
 ### - [Operation not permitted](https://stackoverflow.com/questions/32659348/operation-not-permitted-when-on-root-el-capitan-rootless-disabled)
 
     System Integrity Protection
+    Nvm. For anyone else having this problem you need to reboot your mac and press ⌘+R when booting up. Then go into Utilities > Terminal and type the following commands:
+    $ csrutil disable
+    $ reboot 
     
 ### - [Fatal error: 'QTKit/QTKit.h' file not found](https://stackoverflow.com/questions/39590741/fatal-error-qtkit-qtkit-h-file-not-found-when-i-build-opencv-on-mac)
 
