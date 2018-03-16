@@ -40,3 +40,15 @@
      $ cd ~/opencv-2.4.9/build
      $ cmake -DWITH_QUICKTIME=OFF -DWITH_GSTREAMER=OFF -DWITH_FFMPEG=OFF -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release .. ; make -j4
      $ sudo make install
+     
+### [Macdeployqt - Error: no file in /usr/lib/libfsdk.dylib](https://stackoverflow.com/questions/2809930/macdeployqt-and-third-party-libraries)
+
+    1. Run macdeployqt to enjoy its useful but feebly inadequate benefits
+    $ macdeployqt <path_to_your_nascent_app_bundle>/foo.app
+    2. Install your extra libraries manually
+    $ cp <original_library_path> foo.app/Contents/Frameworks/<lib_name>
+    3. Find out what libraries each binary links to.
+    otool -L <binary_file_name>
+    Change the internal libary paths in your binaries
+    4. install_name_tool -change <original_library_path> @executable_path/../Frameworks/<lib_name> <binary_file_name>
+
